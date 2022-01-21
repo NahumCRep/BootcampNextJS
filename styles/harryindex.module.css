@@ -1,0 +1,14 @@
+.harryp_title{
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+}
+
+.wrap_container{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
