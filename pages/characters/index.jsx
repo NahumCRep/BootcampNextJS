@@ -1,3 +1,4 @@
+import Link  from "next/link";
 export async function getStaticProps() {
     const res = await fetch('https://rickandmortyapi.com/api/character');
     const characters = await res.json();
@@ -14,7 +15,7 @@ const index = ({ characters }) => {
         <div>
             {characters.map((character) => {
                 return (
-                    <a key={character.id} href={`/characters/${character.id}`}>{character.name}</a>
+                    <Link key={character.id} href={`/characters/${character.id}`}>{character.name}</Link>
                 )
             })}
         </div>
